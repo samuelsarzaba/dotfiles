@@ -7,3 +7,12 @@ eval "$(starship init zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# fnm
+FNM_PATH="/home/samuelsarzaba/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/samuelsarzaba/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+eval "$(fnm env --use-on-cd --shell zsh)"

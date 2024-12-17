@@ -11,7 +11,5 @@ config.color_scheme = 'Catppuccin Mocha'
 
 config.enable_tab_bar = false
 
-config.window_decorations = "NONE"
-
 -- and finally, return the configuration to wezterm
 return config
